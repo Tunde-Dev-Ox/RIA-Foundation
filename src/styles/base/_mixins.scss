@@ -1,0 +1,37 @@
+@mixin desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin max-tablet {
+  @media (max-width: 884px) {
+    @content;
+  }
+}
+
+
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin slider-respond {
+  @media (max-width: 654px) {
+    @content;
+  }
+}
+
+@mixin cta-respond {
+  @media (max-width: 610px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}

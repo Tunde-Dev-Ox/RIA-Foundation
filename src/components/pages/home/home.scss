@@ -1,0 +1,523 @@
+@import '/src/styles/base/variables.scss';
+@import '/src/styles/base/mixins.scss';
+.home-main {
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    padding-top: 7.4rem;
+    @include max-tablet {
+        padding-top: 6.2rem;
+    }
+}
+
+.hero-wrapper {
+    width: 100%;
+    position: relative;
+    @include cta-respond {
+        min-height: 300px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include cta-respond {
+            min-height: 300px;
+        }
+    }
+
+    .hero-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.596);
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include cta-respond {
+            min-height: 300px;
+        }
+    }
+
+    .hero-text-outer-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        font-family: $font;
+        @include cta-respond {
+            width: 100%;
+            padding: 0 8px;
+        }
+
+        .hero-text-container {
+            width: 100%;
+            height: 100%;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include tablet {
+                padding: 10px 0;
+            }
+    
+            h1 {
+                font-size: clamp(1.8rem, 0.116rem + 5.92vw, 4rem);
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                font-family: $font;
+                max-width: 700px;
+            }
+    
+            p {
+                font-size: clamp(1rem, 0.781rem + 1.1vw, 1.5rem);
+                font-weight: 500;
+                color: #fff;
+                margin-bottom: 28px;
+                font-family: $font;
+                max-width: 500px;
+                text-align: center;
+            }
+
+            button {
+                padding: 16px 28px;
+                font-size: clamp(0.9rem, 0.768rem + 0.66vw, 1.2rem);
+                font-weight: 700;
+                color: #1f1e1e;
+                background-color: $yellow;
+                border: none;
+                text-transform: uppercase;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: #e47627;
+                }
+            }
+        }
+    }
+}
+
+
+//our partners
+.our-partners {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.our-partners-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.our-partners-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+    font-family: $font;
+    margin-bottom: 1.5rem;
+}
+
+.partners-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-top: 1rem;
+    @include mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.partner-card {
+    width: 120px;
+    @include mobile {
+        width: 60px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+//vision card
+.vision-card {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f7d9422b;
+}
+
+.vision-card-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.vision-card-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+    font-family: $font;
+    margin-bottom: 1.5rem;
+}
+
+.vision-card-wrapper p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $black;
+    font-family: $font;
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 1.8rem;
+}
+
+.vision-card-wrapper img {
+    width: 70%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+}
+
+.vision-card-wrapper span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $black;
+    font-family: $font;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.vision-card-wrapper .btn {
+    padding: 16px 28px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #212180;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+
+    &:hover {
+        background-color: #333389;
+    }
+}
+
+
+//our cause
+.our-cause {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.our-cause-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.our-cause-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: $black;
+    font-family: $font;
+    margin-bottom: 1.5rem;
+}
+
+.cause-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-top: 1rem;
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.service-card {
+    width: 340px;
+    padding: 20px;
+    background-color: #f7d9422b;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+    @include tablet {
+        width: 100%;
+        background-color: #fff;
+    }
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.06);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $black;
+        font-family: $font;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: $black;
+        font-family: $font;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: #212180;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #333389;
+        }
+    }
+}
+
+
+//cta
+.cta-session {
+    width: 100%;
+}
+
+.cta-wrapper {
+    position: relative;
+    width: 100%;
+    @include cta-respond {
+        min-height: 300px;
+    }
+}
+
+.cta-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include cta-respond {
+        min-height: 300px;
+    }
+}
+
+.cta-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include cta-respond {
+        min-height: 300px;
+    }
+}
+
+.cta-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: $font;
+    @include cta-respond {
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .cta-text-container {
+        width: 100%;
+        height: 100%;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include tablet {
+            padding: 10px 0;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 0.116rem + 5.92vw, 4rem);
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-family: $font;
+            max-width: 700px;
+        }
+
+        button {
+            padding: 16px 28px;
+            font-size: clamp(0.9rem, 0.768rem + 0.66vw, 1.2rem);
+            font-weight: 700;
+            color: #1f1e1e;
+            background-color: $yellow;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #e47627;
+            }
+        }
+    }
+}
+
+//carousel styling
+.our-stories {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: #fff;
+}
+
+.our-stories-wrapper {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.story-card-carousel {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.story-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    @include slider-respond {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-card-image-wrapper {
+        width: 30%;
+        @include slider-respond {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+
+    .story-carousel-wrapper {
+        width: 65%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 20px;
+        @include slider-respond {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 20px;
+            text-align: center;
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $black;
+            font-family: $font;
+            margin-bottom: 2rem;
+            @include slider-respond {
+                font-size: 1.8rem;
+                margin: 0 auto;
+                margin-bottom: .6rem;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: $black;
+            font-family: $font;
+            margin-bottom: 1rem;
+            text-align: left;
+            @include slider-respond {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.slider-dots {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.slider-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .active {
+        background-color: $yellow;
+    }
+}
+

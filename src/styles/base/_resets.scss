@@ -1,0 +1,80 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, figure, blockquote {
+    margin: 0;
+    padding: 0;
+}
+  
+ul, ol {
+    list-style: none;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+    
+  /* Remove default link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+  /* Remove default button styles */
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+  
+  /* Remove default input styles */
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+  
+  
+textarea, select {
+    font: inherit; /* Inherit font settings */
+    background: transparent;
+    border: 0;
+    padding: 0;
+}
+  
+  /* Ensure media elements are responsive */
+img, video, iframe, canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+  
+  /* Ensure HTML5 elements display properly */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+  
+  /* Reset table element styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+  
+  /* Remove scrollbar gap in Chrome */
+body {
+    overflow: -moz-scrollbars-none; /* For older Firefox */
+    scrollbar-width: none; /* Firefox */
+}
+  
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}  

@@ -1,0 +1,128 @@
+@import '/src/styles/base/variables.scss';
+@import '/src/styles/base/mixins.scss';
+header {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    top: 0;
+}
+
+.header-wrapper {
+    width: 100%;
+}
+
+.header-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f7d842;
+    width: 100px;
+    @include max-tablet {
+        width: 80px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    @include max-tablet {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.154rem;
+            font-weight: bold;
+            font-weight: 500;
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #e47627;
+            }
+        }
+    }
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @include max-tablet {
+        display: none;
+    }
+    
+    button {
+        padding: 14px 24px;
+        font-family: $font;
+        background-color: #f7d842;
+        color: #000;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #e47627;
+        }
+    }
+
+    button:last-child {
+        background-color: #212180;
+        color: #fff;
+        border-radius: 40px;
+
+        &:hover {
+            background-color: #333389;
+        }
+    }
+}
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+    @include max-tablet {
+        display: block;
+    }
+
+    .line {
+        width: 100%;
+        height: 2px;
+        border-radius: 20px;
+        background-color: #000;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+    }
+}
+
